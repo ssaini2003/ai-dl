@@ -63,16 +63,15 @@ if __name__ == '__main__':
     args = parser.parse_args()
     amnt = args.amount_arg
 
-    if if amnt is None:
+    if amnt is None:
         amnt = 1
-    elif or amnt<=0 or amnt>9:        
+    elif amnt<=0 or amnt>9:        
         print("Invalid amount provided. (Maximum 9 images)")
         
     loc = args.location_arg
     if loc == None:
         loc = os.getcwd()
     prompt = args.prompt_arg
-
 
 
     image_generator = AiDL()
